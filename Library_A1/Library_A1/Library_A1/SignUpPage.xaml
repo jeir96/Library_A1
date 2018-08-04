@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:controls="clr-namespace:XLabs.Forms.Controls;assembly=XLabs.Forms"
+             x:Class="Library_A1.SignUpPage">
+
+    <ScrollView x:Name="MainScrol" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+        <StackLayout VerticalOptions="CenterAndExpand" Orientation="Vertical" Spacing="20" Margin="30,0" >
+            <Label Text="Lets Create a New Account"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+        
+            <Entry x:Name="SignUp_First_Name" Placeholder="Please Enter your First Name" />
+       
+        <Entry x:Name="SignUp_Last_Name" Placeholder="Please Enter Your Last Name"/>
+        <Entry x:Name="SignUp_Father_Name" Placeholder="Please Enter Your Father Name"/>
+            <StackLayout Grid.Row="1" Orientation="Horizontal">
+                <Label Text="Birthday:"/>
+                <DatePicker MinimumDate="01/01/1950" MaximumDate="12/31/2050" Date="06/21/2018"/>
+                </StackLayout>
+                <Entry x:Name="SignUp_Address" Placeholder="Please Enter Your Address"/>
+        <Entry x:Name="SignUp_Business_Type" Placeholder="Please Enter Your Business Type"/>
+        <Entry x:Name="SignUp_Qualification" Placeholder="Please Enter Your Qualification Type"/>
+        <Entry x:Name="SignUp_User_Name" Placeholder="Please Enter Your UserName"/>
+        <Entry x:Name="SignUp_Password" Placeholder="Please Enter Your Password"/>
+            <StackLayout Grid.Row="1" Orientation="Horizontal">
+                <Label Text="Make Subscription Card"/>
+                <Switch
+                    x:Name="Make_SSC"
+               IsToggled="False"
+               HorizontalOptions="EndAndExpand"
+               VerticalOptions="CenterAndExpand"/>
+                </StackLayout>
+               
+            <StackLayout Grid.Row="1" Orientation="Horizontal">
+                <Label Text="Enter Your Bank Account Information"/>
+                <Switch
+                    x:Name="Enter_Y_B_A_I"
+               IsToggled="False"
+               HorizontalOptions="EndAndExpand"
+               VerticalOptions="CenterAndExpand"/>
+            </StackLayout>
+            <Button Text="Signup" Clicked="Signup_Clicked"/>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

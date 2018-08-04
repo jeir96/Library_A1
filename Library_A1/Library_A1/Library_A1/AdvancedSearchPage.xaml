@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Library_A1.AdvancedSearchPage">
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="CenterAndExpand">
+            <Label Text="Welcome to The advanced Search!"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+
+            <Picker x:Name="picker" Title="Select Type Of Search"  Margin="0,0,0,16">
+                <Picker.ItemsSource>
+                    <x:Array Type="{x:Type  x:String}">
+                        <x:String>Name</x:String>
+                        <x:String>Class</x:String>
+                        <x:String>Author</x:String>
+                    </x:Array>
+                </Picker.ItemsSource>
+            </Picker>
+            <SearchBar Placeholder="Enter The Text Here"/>
+            <Button Text="Search"/>
+            
+            <Button Text="Borrow" Clicked="Borrow_Clicked"/>
+            <Button Text="Buy" Clicked="Buy_Clicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

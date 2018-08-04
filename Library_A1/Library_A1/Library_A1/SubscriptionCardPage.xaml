@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Library_A1.SubscriptionCardPage">
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="CenterAndExpand">
+            <Label Text="Welcome to Subscription Card Page!"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+            <Button Text="New Subscription Card" Clicked="New_Subscription_Card_Clicked"/>
+            <Button Text="I lose My Subscription card" Clicked="I_Lose_Clicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

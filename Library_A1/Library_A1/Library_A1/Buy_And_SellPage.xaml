@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Library_A1.Buy_And_SellPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Welcome to Buy and Sell Page"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+            <Picker>
+                <Picker.ItemsSource>
+                    <x:Array Type="{x:Type  x:String}">
+                        <x:String>Buy</x:String>
+                        <x:String>Sell</x:String>
+                    </x:Array>
+                </Picker.ItemsSource>
+            </Picker>
+            <Entry Placeholder="Published Name"/>
+            <Entry Placeholder="Published Class"/>
+            <StackLayout Grid.Row="1" Orientation="Horizontal">
+                <Label Text="Date:"/>
+                <DatePicker MinimumDate="01/01/2000" MaximumDate="12/31/2050" Date="06/21/2018"/>
+            </StackLayout>
+            <Entry Placeholder="Price"/>
+            <Entry Placeholder="Actual Price"/>
+            <Button Text="Confirm"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
