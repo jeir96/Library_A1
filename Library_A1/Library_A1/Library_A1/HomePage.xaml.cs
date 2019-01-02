@@ -22,7 +22,7 @@ namespace Library_A1
             Navigation.PushAsync(new AdvancedSearchPage());
         }
         private void Buy_Sell_Clicked(object sender, EventArgs e)
-        {
+        {   
             Navigation.PushAsync(new Buy_And_SellPage());
         }
     }

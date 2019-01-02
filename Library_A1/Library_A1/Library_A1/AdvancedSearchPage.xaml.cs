@@ -21,5 +21,11 @@ namespace Library_A1
         {
             Navigation.PushAsync(new BorrowPage());
         }
+
+        private void Buy_Clicked(object sender ,EventArgs e)
+        {
+
+        }
+
     }
 }
